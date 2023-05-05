@@ -28,7 +28,7 @@ const Body = () => {
         <>
         {
             typeMovie.length === 0 && movie.length === 0 &&
-            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100vh'}}>
+            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', marginTop: '153px', marginBottom: '150px'}}>
             <FallingLines
                     color="#B04759"
                     width="100"

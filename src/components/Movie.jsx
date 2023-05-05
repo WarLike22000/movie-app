@@ -84,7 +84,7 @@ const Movie = () => {
                 </div>
             </div>
             }
-            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100vh'}}>
+            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', marginTop: '153px', marginBottom: '250px'}}>
                 {
                     !data && <FallingLines
                     color="#B04759"
