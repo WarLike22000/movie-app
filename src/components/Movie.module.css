@@ -1,0 +1,128 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    background-color: rgb(54, 54, 54);
+    max-width: 1300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.poster img {
+    width: 250px;
+    margin: 40px 15px;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.poster img:hover {
+    filter: brightness(110%);
+}
+
+.mainContainer {
+    display: flex;
+    max-width: 3000px;
+}
+
+.first {
+    max-width: 2000px;
+    margin: 100px 0;
+}
+
+.first div {
+    display: flex;
+    align-items: center;
+    margin: 20px 50px;
+    width: 100%;
+}
+
+.first div p {
+    max-width: 400px;
+    margin-left: 8px;
+    color: gray;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.second {
+    max-width: 2000px;
+    margin: 100px 0;
+}
+
+.second div {
+    display: flex;
+    align-items: center;
+    margin: 20px 50px;
+    width: 100%;
+}
+
+.second div p {
+    max-width: 400px;
+    margin-left: 8px;
+    color: gray;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.third {
+    margin: 60px 10px;
+    max-width: 400px;
+}
+
+.third div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 0;
+}
+
+.third div:nth-child(1) p {
+    margin-left: 8px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.third div:nth-child(2) {
+    display: flex;
+    max-width: 5000px;
+    margin: 0 20px;
+}
+
+.third div:nth-child(2) p {
+    margin-left: 10px;
+    color: gray;
+    text-align: justify;
+}
+
+@media(max-width: 1170px) {
+    .poster img {
+        width: 170px;
+    }
+    .mainContainer {
+        display: block;
+        margin-right: 40px;
+    }
+    .container {
+        display: flex;
+    }
+    .first {
+        margin: 0 0;
+    }
+    .second {
+        margin: 0;
+    }
+}
+
+@media(max-width: 770px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .first {
+        margin-right: 50px;
+    }
+    .second {
+        margin-right: 50px;
+    }
+}
