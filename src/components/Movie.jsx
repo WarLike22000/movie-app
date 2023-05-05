@@ -12,7 +12,7 @@ const Movie = () => {
     const [data, setData] = useState()
 
     const getMovie = async () => {
-        const responseTwo = axios.get(`http://www.omdbapi.com/?t=${title}&y=${year}&plot=full&apikey=1e4ad7bc`)
+        const responseTwo = axios.get(`https://www.omdbapi.com/?t=${title}&y=${year}&plot=full&apikey=1e4ad7bc`)
         setData((await responseTwo).data)
     }
     getMovie()

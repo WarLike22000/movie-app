@@ -16,7 +16,7 @@ const Body = () => {
     const [typeSeries, setTypeSeries] = useState([]);
 
     const getTypeMovie = () => {
-            axios.get(`http://www.omdbapi.com/?s=lord&plot=full&apikey=1e4ad7bc`)
+            axios.get(`https://www.omdbapi.com/?s=lord&plot=full&apikey=1e4ad7bc`)
                 .then(res => setTypeMovie(res.data.Search))
     }
 

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const getMovie = async (name, year) => {
-    const response = await axios.get(`http://www.omdbapi.com/?s=${name}&y=${year}&plot=full&apikey=1e4ad7bc`)
+    const response = await axios.get(`https://www.omdbapi.com/?s=${name}&y=${year}&plot=full&apikey=1e4ad7bc`)
     return response.data;
 }
 
